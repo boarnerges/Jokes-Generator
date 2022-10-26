@@ -9,7 +9,7 @@ async function generateJoke() {
     headers: { Accept: "application/json" },
   });
 
-  const joke = await jokesRes.json();
-  console.log(joke);
+  const joke = await jokeRes.json();
+  // console.log(joke);
   jokeEl.innerHTML = joke.joke;
 }
